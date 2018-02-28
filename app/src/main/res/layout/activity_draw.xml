@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.qklahpita.draw.DrawActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c2c2c2">
+
+        <ImageView
+            android:id="@+id/iv_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_color_lens_black_24dp"
+            android:padding="@dimen/padding_default"/>
+
+        <ImageView
+            android:id="@+id/iv_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done_black_24dp"
+            android:padding="@dimen/padding_default"
+            android:layout_alignParentEnd="true"/>
+
+        <RadioGroup
+            android:id="@+id/gr_pen_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_default">
+
+            <RadioButton
+                android:id="@+id/rb_thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thin"/>
+
+            <RadioButton
+                android:id="@+id/rb_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"/>
+
+            <RadioButton
+                android:id="@+id/rb_strong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strong"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_draw"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>
